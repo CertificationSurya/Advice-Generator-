@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Manrope:wght@800&family=Space+Grotesk:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  background: hsl(218, 23%, 16%);
+}
+.container__box {
+  width: min(95%, 600px);
+  background: hsl(217, 19%, 24%);
+  display: flex;
+  place-items: center;
+  border-radius: 12px;
+  flex-direction: column;
+  row-gap: 1em;
+  padding-block: 3em;
+  position: relative;
+}
+.container__box .audio {
+  color: hsl(193, 38%, 86%);
+  background: hsl(218, 23%, 16%);
+  display: flex;
+  place-items: center;
+  font-size: 1.3em;
+  position: absolute;
+  top: 0.4rem;
+  left: 0.4rem;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.container__box .audio i {
+  margin: auto;
+}
+.container .adviceList {
+  color: hsl(150, 100%, 66%);
+  font-size: 0.8em;
+  letter-spacing: 1px;
+}
+.container .container__advice {
+  font-size: 1.5rem;
+  padding-inline: 5%;
+  color: hsl(193, 38%, 86%);
+}
+.container .container__advice i {
+  font-size: 0.4em;
+  vertical-align: top;
+  padding-top: 0.2rem;
+}
+.container .dice-Container {
+  display: flex;
+  place-items: center;
+  background: hsl(150, 100%, 66%);
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  bottom: -20px;
+}
+.container .dice-Container img {
+  margin: auto;
+  width: 20px;
+}
+.container .dice-Container img.clicked {
+  transform: rotate(720deg);
+  transition: 1s;
+}
+.container .dice-Container:hover {
+  box-shadow: 0 0 15px 0px hsl(150, 100%, 66%);
+  cursor: pointer;
+}

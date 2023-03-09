@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Manual Components -->
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./Js File/logic.js" defer></script>
+
+    <!-- Other Online Components -->
+    <script src="https://kit.fontawesome.com/69e2e65dcc.js" crossorigin="anonymous"></script>
+
+</head>
+<body> 
+    <div class="container">
+        <div class="container__box">
+            <div class="audio" onclick="listenAdvice()" aria-label="Listen to Advice">
+                <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <p class="adviceList">ADVICE #<span class="adviceNum">69</span>
+            </p>
+
+            <blockquote class="container__advice" cite="https://api.adviceslip.com/">
+                <i class="fa-solid fa-quote-left"></i>
+                    <span class="quote">
+                        Visitors are like fish: As much as you might like them, after three days they start to smell. 
+                    </span>
+                <i class="fa-solid fa-quote-right"></i>
+            </blockquote>
+
+            <picture>
+                <source media="(min-width:500px)" srcset="./advice-generator-app-main/images/pattern-divider-desktop.svg">
+                <img src="./advice-generator-app-main/images/pattern-divider-mobile.svg" class="divider">
+            </picture>
+
+            <div class="dice-Container" onclick="adviceGenerator()">
+                <img src="./advice-generator-app-main/images/icon-dice.svg" id="iconDice">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

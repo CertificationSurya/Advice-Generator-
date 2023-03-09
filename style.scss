@@ -1,0 +1,90 @@
+@use './config' as *;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+}
+
+.container{
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    @include bg-color($blue-100);
+
+    
+    &__box{
+        width: min(95%, 600px);
+        @include bg-color($gray-blue-100);
+        @include center;
+        border-radius: 12px;
+        flex-direction: column;
+        row-gap: 1em;
+        padding-block: 3em;
+        position: relative;
+
+        .audio{
+        @include color($cyan-10);
+        @include bg-color($blue-100); 
+        @include center;
+           font-size: 1.3em;
+           position: absolute;
+           top: 0.4rem;
+           left: 0.4rem;
+           cursor: pointer;
+           height: 40px;
+           width: 40px;
+           border-radius: 50%;
+           i{
+            margin: auto;
+           }
+        }
+    }
+
+
+    .adviceList{
+        @include color($green-20);
+        font-size: 0.8em;
+        letter-spacing: 1px;
+
+    }
+    #{&}__advice{
+        font-size: 1.5rem;
+        padding-inline: 5%;
+        @include color($cyan-10);
+        i{
+            font-size: 0.4em;
+            vertical-align: top;
+            padding-top: 0.2rem;
+        }
+    }
+
+    .dice-Container{
+        @include center;
+        @include bg-color($green-20);
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        bottom: -20px;
+        img{
+            margin: auto;
+            width: 20px;
+
+            &.clicked{
+                transform: rotate(720deg);
+                transition: 1s ;
+            }
+            
+        }
+
+        &:hover{
+            box-shadow: 0 0 15px 0px $green-20;
+            cursor: pointer;
+        }
+    }
+}
+

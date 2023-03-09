@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Manrope:wght@800&family=Space+Grotesk:wght@500&display=swap');
+
+
+
+// Primary colors
+$cyan-10 : hsl(193, 38%, 86%);
+$green-20 : hsl(150, 100%, 66%);
+
+// Neutral Colors
+$gray-blue-80: hsl(217, 19%, 38%);
+$gray-blue-100: hsl(217, 19%, 24%);
+$blue-100: hsl(218, 23%, 16%);
+
+@mixin color ($color) {
+    color: $color;
+}
+
+@mixin bg-color ($color) {
+    background: $color;
+}
+
+@mixin center(){
+    display: flex;
+    place-items: center;
+}
+
+
+
+
+// ### Body Copy
+
+// - Font size (quote): 28px
+
+// ### Font
+
+// - Family: [Manrope](https://fonts.google.com/specimen/Manrope)
+// - Weights: 800
