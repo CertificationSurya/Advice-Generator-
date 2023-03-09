@@ -14,7 +14,7 @@
   background: hsl(218, 23%, 16%);
 }
 .container__box {
-  width: min(95%, 600px);
+  width: min(95%, 500px);
   background: hsl(217, 19%, 24%);
   display: flex;
   place-items: center;

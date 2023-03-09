@@ -13,6 +13,7 @@ let MineAdvices ={
 
 
 async function adviceGenerator() {
+    speechSynthesis.cancel();
     
    DiceRoller()
     
@@ -58,4 +59,5 @@ function DiceRoller(){
     setTimeout(()=>{
         diceImg.classList.remove('clicked');
     },1000)
+
 }
